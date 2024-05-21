@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<style>
+    body{
+        background-color: rgb(150, 196, 236);
+        font: normal 15pt Arial;
+    }
+</style>
+<body>
+    <h1>informações pessoais</h1>
+
+    <form action="">
+        <p>
+            <label for="inome">Seu nome completo</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="icpf">CPF</label>
+            <input type="text" name="cpf" id="icpf">
+        </p>
+        <p>
+            <label for="inas">Nascimento</label>
+            <input type="date" name="nas" id="inas">
+        </p>
+        <p>
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+        <p>
+            <label for="icel">Celular</label>
+            <input type="tel" name="cel" id="icel" placeholder="(xx)xxxxx-xxxx"
+            pattern="^\(\d{2}\)\d{5}-\d{4}$">
+        </p>
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="text" name="tel" id="itel">
+        </p>
+
+        <p>
+               
+        </p>
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
