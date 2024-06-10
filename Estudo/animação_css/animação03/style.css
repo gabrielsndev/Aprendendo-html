@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    color: white;
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid #212121;
+    }
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 20px);
+    }
+    
+}
+
+@keyframes palavras {
+    0%, 20%{
+        content: "espero que dê certo";
+    }
+    21%, 40%{
+        content: "acho que deu certo";
+    }
+    41%, 60%{
+        content: "o pai é brabo não tem jeito";
+    }
+    61%, 80%{
+        content: "lalalallalalal";
+    }
+    81%, 100%{
+        content: "agora vai repetir";
+    }
+}
+
+.animacao{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.animacao span{
+    position: relative;
+}
+
+.animacao span::before{
+    content: "";
+    color: #ff007b;
+    animation: palavras 20s infinite;
+}
+.animacao span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #ff007b;
+    right: -15px;
+    animation: cursor 0.8s infinite, digita 18s steps(15) infinite;
+    width: calc(100% + 20px);
+    background-color: #212121;
+}
