@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to left, rgb(197, 31, 25), rgb(218, 67, 22), rgb(221, 97, 48))
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(2, 2, 2, 0.5);
+    transition: 0.5s;
+}
+
+.card:hover{
+    height: 450px;
+}
+
+.card .img-box{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.card:hover .img-box{
+    top: -140px;
+}
+
+.card .img-box img{
+    width: 85%;
+    height: 0%;
+    object-fit: cover;
+
+}
+
+.card .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    padding: 0px 30px;
+    height: 35px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.card:hover .content{
+    top: 130px;
+    height: 300px;
+}
+
+.botao{
+    background-image: linear-gradient(to left, rgb(197, 31, 25), rgb(218, 67, 22));
+    margin-top: 30px;
+    padding: 20px 60px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.botao:hover{
+    background-image: linear-gradient(to left, rgb(255, 124, 85), rgb(226, 57, 51));
+}
+
