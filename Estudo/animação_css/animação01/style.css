@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@keyframes divcor{
+    0%{background-color: brown;}
+    50%{background-color: darkblue;}
+    100%{background-color: royalblue;}
+}
+
+@keyframes divcorhover{
+    0%{background-color: yellowgreen;}
+    50%{background-color: chocolate;}
+    100%{background-color: darkgreen;}
+}
+
+@keyframes divimg{/*Isso não dá certo*/
+    from{background-image: url(fotos/images\ \(1\).jpeg);}
+    to{background-image: url(fotos/shadow-about.png);}
+}
+
+@keyframes texto{
+    0%{text-align: left;font-size: 2em; font-family: Arial, Helvetica, sans-serif;}
+    50%{text-align: center; font-size: 3em;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    100%{text-align: right;font-size: 2em;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+div#cor{
+    background-color: brown;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    animation: divcor 1s ease-in 1s infinite alternate ;
+    margin-left: 300px;
+}
+
+
+div#cor:hover{
+    animation: divcorhover 1s ease-in infinite alternate ;
+}
+
+div#img{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    display: inline-block;
+    margin-left: 100px;
+    animation: divimg 2s else-in infinite alternate ;
+
+}
