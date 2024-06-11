@@ -55,6 +55,7 @@ body{
     color: #ff007b;
     animation: palavras 20s infinite;
 }
+
 .animacao span::after{
     content: "";
     position: absolute;
